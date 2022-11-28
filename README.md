@@ -14,7 +14,7 @@ I then used the input function to ask the user to guess a letter.
 
 Following this, I created an 'if' statement to ensure the guess was valid. For example, a number, character or two letters would not be valid guesses. One single alphabetical letter would class as a valid guess. I did this by ensuring the guess was == 1 character and by using the .isalpha() function.
 
-
+<img width="531" alt="milestone_2" src="https://user-images.githubusercontent.com/117574774/204358053-3cdfa5ae-1fe6-444c-8223-a409d2641c64.png">
 
 ---
 ## Milestone 3
