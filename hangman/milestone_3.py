@@ -14,8 +14,7 @@ def ask_for_input():                                                        #Cre
         
     check_guess(guess)
 
-def check_guess(guess):                                                     #Creating a function to check if the guess is in the word
-    guess = guess.lower()                                                   #This ensures the letter is lower case
+def check_guess(guess):                                                     #Creating a function to check if the guess is in the word                                                  
     if guess in word:
         print(f"Correct! '{guess}' is in the word!")                        #Tells the user the guess is correct if it is in the word
         return guess                                                        #This will return the guess
