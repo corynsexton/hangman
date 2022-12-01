@@ -2,7 +2,7 @@ import random
 
 class Hangman():                                                            #Class called Hangman
 
-    def __init__ (self, word_list, num_lives = 5):                          #Uses word_list created and asigns user 5 lives to play        
+    def __init__ (self, word_list, num_lives = 5):                          #Initializes attributes - uses word_list created and asigns user 5 lives to play        
         self.word = random.choice(word_list)                                #Selects random word from word_list
         self.num_letters = len(self.word)                                   #Number of letters in word selected
         self.num_lives = num_lives                                          #Number of lives player has at start of game
@@ -45,7 +45,7 @@ class Hangman():                                                            #Cla
                           
 
 def play_game(word_list):                                                   
-    game = Hangman(word_list, num_lives = 5)                                #Sets game to use word_list created and gives user 5 lives
+    game = Hangman(word_list, num_lives = 5)                                #Calls Hangman class
     
     while True:
         if game.num_lives == 0:                                             #Tells user they lose if they have 0 lives
