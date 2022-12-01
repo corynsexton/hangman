@@ -3,7 +3,7 @@ import random
 word_list = ['peach', 'pineapple', 'grape', 'pear', 'apple']
 
 class Hangman():                                                                    #Creates a class for game
-    def __init__ (self, word_list, num_lives = 5):
+    def __init__ (self, word_list, num_lives = 5):                                  #Initializes attributes of class
         self.word_list = word_list                                                  #List of words
         self.word = random.choice(word_list)                                        #Random word from list to be guessed
         self.num_lives = num_lives                                                  #Number of lives player has at start of game  
@@ -12,7 +12,7 @@ class Hangman():                                                                
         self.list_of_guesses = []                                                   #List to store guesses that player has already tried
     
     def check_guess(self, guess):
-        guess = guess.lower()                                                       #Makes sure all guesses are lower case
+        guess = guess.lower()                                                       #Ensures the letter is lower case
 
         if guess in self.word:
             print(f"Correct! '{guess}' is in the word!")
@@ -43,7 +43,7 @@ class Hangman():                                                                
                 self.check_guess(guess)                                             #Checks if guess is in the word
                 
 
-game = Hangman(word_list, num_lives=5)                                              #Asigns above word list and 5 lives for Hangman game
+game = Hangman(word_list, num_lives=5)                                              #Asigns Hangman class to variable 'game'
 game.ask_for_input()                                                                #Calls ask_for_input method
         
                  
